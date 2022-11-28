@@ -1,0 +1,46 @@
+.contentModalDelete {
+  width: 610px;
+  padding: 0px 45px;
+  background-color: white;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  &-header {
+    img {
+      width: 92px;
+      height: 92px;
+      margin: auto;
+      margin-top: 58px;
+      margin-bottom: 50px;
+    }
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      color: #62677a;
+      text-align: center;
+      font-family: "Inter";
+      letter-spacing: 0.35px;
+      span {
+        color: #ff4d4d;
+      }
+    }
+  }
+  &-action {
+    display: flex;
+    button {
+      border: none;
+      font-weight: 500;
+      font-size: 14px;
+      width: 164px;
+      padding: 10px 0px;
+      border-radius: 40px;
+      margin: 48px 13px 36px;
+      &:nth-child(1) {
+        border: 1px solid #62677a;
+        color: #62677a;
+      }
+    }
+  }
+}

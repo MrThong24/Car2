@@ -1,0 +1,28 @@
+.contentNotFound {
+  max-width: 981px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+  &-body {
+    border-radius: 20px;
+    background: rgb(255, 255, 255);
+    margin: auto;
+    padding: 150px 180px;
+    box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
+    h2 {
+      font-size: 50px;
+      font-weight: bold;
+      color: rgb(0, 0, 0);
+      text-align: center;
+      width: 100%;
+      display: inline-block;
+    }
+    p {
+      font-size: 40px;
+      font-weight: 500;
+    }
+  }
+}

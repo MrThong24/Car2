@@ -1,0 +1,39 @@
+.dropdown {
+  padding: 38px 28px 28px 43px;
+  &-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    span {
+      font-size: 16px;
+      font-weight: 400;
+    }
+    i {
+      font-size: 18px;
+      padding-right: 16px;
+      padding-bottom: 12px;
+      padding-top: 12px;
+    }
+  }
+  &-box {
+    &__list {
+      padding-left: 0px;
+    }
+    &__item {
+      padding: 9px 0px;
+      font-size: 16px;
+      cursor: pointer;
+      &.active {
+        font-weight: 700;
+        font-size: 16px;
+        color: #00ade8;
+      }
+      &:hover {
+        font-weight: 700;
+        font-size: 16px;
+        color: var(--colorBlue);
+      }
+    }
+  }
+}

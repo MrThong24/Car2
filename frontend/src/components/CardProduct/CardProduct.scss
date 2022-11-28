@@ -1,0 +1,112 @@
+@import "../../styles/breakpoints";
+.card-body {
+  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.1) !important;
+  cursor: pointer;
+  transition: all 0.2s linear;
+  border-radius: 8px !important;
+  &:hover {
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.5) !important;
+  }
+  margin-bottom: 49px;
+  &:nth-child(1) {
+    @include xl {
+      margin-right: 44px !important;
+    }
+    @include md {
+      margin-right: 0px !important;
+    }
+    @include tab {
+      margin-right: 10px !important;
+    }
+  }
+  &:nth-child(2) {
+    margin-left: 44px;
+    margin-right: 44px;
+    @include xl {
+      margin-right: 0px !important;
+    }
+  }
+  &:nth-child(3) {
+    @include xl {
+      margin-right: 44px !important;
+    }
+    @include md {
+      margin-right: 0px !important;
+    }
+    @include tab {
+      margin-right: 10px !important;
+    }
+  }
+  &:nth-child(4) {
+    @include tab {
+      margin-right: 10px !important;
+    }
+  }
+  &:nth-child(3n + 2) {
+    margin-left: 44px;
+    margin-right: 44px;
+    @include xl {
+      margin-left: 0px !important;
+    }
+    @include md {
+      margin-right: 0px !important;
+    }
+    @include tab {
+      margin-right: 10px !important;
+    }
+  }
+  &__items {
+    width: 100%;
+    height: 100%;
+    padding: 0px !important;
+  }
+  &__image {
+    width: 259px;
+    height: 160px;
+    object-fit: cover;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0px;
+  }
+  &__name {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 17px;
+    padding: 0px 25px;
+    margin-bottom: 0px;
+    letter-spacing: 0.35px;
+    font-family: "Open Sans";
+    font-style: normal;
+  }
+  &__price {
+    padding: 0px 25px 18px;
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: "Open Sans";
+    color: #62677a;
+    letter-spacing: 0.35px;
+  }
+  &__action {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 25px 14px;
+  }
+  button {
+    width: 95px;
+    height: 31px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.35px;
+    border: none;
+    border-radius: 4px;
+    a {
+      color: white;
+      display: inline-block;
+      width: 100%;
+      height: 31px;
+      line-height: 31px;
+    }
+  }
+}

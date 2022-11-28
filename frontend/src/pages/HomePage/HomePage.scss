@@ -1,0 +1,87 @@
+@import "../../styles/breakpoints";
+.contentHomePage {
+  max-width: 981px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 38px;
+  @include xl {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  &-header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    &__search {
+      position: relative;
+      margin-top: 1px;
+      display: flex;
+      align-items: center;
+
+      input {
+        width: 445px;
+        height: 48px;
+        font-size: 14px;
+        font-weight: 400;
+        border: 1px solid rgba(188, 190, 198, 0.4);
+        border-radius: 4px;
+        padding-left: 56px;
+        @include md {
+          width: 200px;
+          display: flex;
+          justify-content: center;
+        }
+        @include lg {
+          width: 300px;
+          display: flex;
+          justify-content: center;
+        }
+      }
+      i {
+        position: absolute;
+        font-size: 20px;
+        margin-left: 22px;
+      }
+    }
+  }
+  &-body {
+    margin-top: 38px;
+    padding: 46px 57px;
+    border-radius: 20px;
+    background-color: white;
+    margin-bottom: 49px;
+    @include lg {
+      padding: 46px 0px;
+    }
+    &__list {
+      display: flex;
+      justify-content: flex-start;
+      width: 100%;
+      @include xl {
+        display: flex;
+        justify-content: center;
+      }
+    }
+    &__pagination {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+      li {
+        margin: 0 6px;
+        button {
+          width: 44px;
+          height: 44px;
+        }
+      }
+    }
+    &__notFound {
+      width: 100%;
+      display: block;
+      text-align: center;
+      font-weight: 700;
+      font-size: 18px;
+    }
+  }
+}

@@ -1,0 +1,77 @@
+.editContent {
+  width: 100%;
+  display: inline-block;
+  margin-bottom: 50px;
+  margin: auto;
+  .editProductContent {
+    max-width: 981px;
+    display: flex;
+    margin: auto;
+    margin-top: 38px;
+    background-color: white;
+    padding: 50px 21px 0px 38px;
+    border-radius: 20px;
+
+    &-left {
+      width: 50%;
+      padding-right: 31px;
+      &__title {
+        font-size: 18px;
+        font-weight: 600;
+        color: #171b2f;
+        letter-spacing: 0.35px;
+        margin-bottom: 23px;
+        font-family: "Open Sans";
+      }
+      &__active {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button {
+          padding: 10px 70px;
+          height: 44px;
+          border: none;
+          border: 1px solid var(--colorButtonPrimary);
+          border-radius: 4px;
+          margin: 0px 10px;
+          font-size: 14px;
+          margin-top: 44px;
+          &:hover {
+            font-weight: 600;
+            font-size: 16;
+          }
+        }
+      }
+    }
+    &-right {
+      width: 50%;
+      padding-left: 31px;
+      &__Obl {
+        color: red;
+      }
+      &__addFile {
+        display: none;
+      }
+      &__box {
+        margin-bottom: 10px;
+      }
+      &__img {
+        width: 421px;
+        height: 215px;
+        object-fit: fill;
+      }
+      &__boxSlide {
+        margin-top: 26px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+  }
+}
+.edit-modal {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

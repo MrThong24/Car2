@@ -1,0 +1,35 @@
+.modal {
+  width: 610px;
+  padding: 25px 27px;
+  margin: auto;
+  background-color: white;
+  border-radius: 5px;
+  &-header {
+    display: flex;
+    justify-content: flex-end;
+    i {
+      cursor: pointer;
+      font-size: 25px;
+    }
+  }
+  &-center {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 50px 100px;
+
+    img {
+      width: 120px;
+      height: 120px;
+      margin: auto;
+    }
+    p {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      margin-top: 10px;
+      text-align: center;
+    }
+  }
+}

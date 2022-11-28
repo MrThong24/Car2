@@ -1,0 +1,54 @@
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 64px;
+  background: #00ade8;
+  display: flex;
+  justify-content: flex-start;
+  z-index: 99;
+  &-logo {
+    height: 100%;
+    &__box {
+      display: flex;
+      height: 100%;
+      align-items: center;
+
+      padding: 0px 140px 0px 70px;
+    }
+    &__img {
+      width: 34px;
+      height: 34px;
+    }
+    &__name {
+      font-size: 48px;
+      font-family: "Petrona";
+      font-weight: bold;
+      color: #ffff;
+      height: 69px;
+    }
+  }
+  &-nav {
+    height: 100%;
+    &__list {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      height: 100%;
+    }
+    &__items {
+    }
+    &__link {
+      padding-right: 39px;
+      font-size: 18px;
+      font-weight: 400;
+      color: #ffff;
+      opacity: 0.75;
+      &.active {
+        font-weight: 700;
+        opacity: 1;
+      }
+    }
+  }
+}

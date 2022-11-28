@@ -1,0 +1,99 @@
+.chooseImageContent {
+  width: 189px;
+  margin-right: 25px;
+  margin-bottom: 38px;
+  overflow: hidden;
+  transition: 0.3s;
+  &:nth-child(2) {
+    margin-left: 25px;
+    margin-right: 0px;
+  }
+  &:nth-child(4) {
+    margin-left: 25px;
+    margin-right: 0px;
+  }
+  &-title {
+    display: block;
+    padding: 8px 0px;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.35px;
+    color: #343747;
+  }
+  &-imageBefore {
+    padding: 25px 0px;
+    label {
+      padding: 0px;
+      width: 100%;
+      height: 100%;
+    }
+    &__image {
+      width: 75px;
+      height: 75px;
+      margin: auto;
+    }
+  }
+  input {
+    display: none;
+  }
+  &-imageAfter {
+    position: relative;
+    overflow: hidden;
+    height: 118px;
+    &:hover &__action label {
+      cursor: pointer;
+      transform: translateY(0);
+    }
+    &:hover &__action button {
+      cursor: pointer;
+      transform: translateY(0);
+    }
+    &__show {
+      width: 100%;
+      z-index: 10;
+    }
+    &__action {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      opacity: 1;
+      label {
+        width: 95px;
+        height: 31px;
+        border-radius: 4px;
+        font-weight: 400;
+        font-size: 14px;
+        letter-spacing: 0.35px;
+        font-family: "Inter";
+        border: 0.5px solid #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 16px;
+        transform: translateY(150px);
+        transition: 0.3s;
+        color: white;
+        background-color: rgba(255, 255, 255, 0.5);
+      }
+      button {
+        width: 95px;
+        height: 31px;
+        border-radius: 4px;
+        font-weight: 400;
+        font-size: 14px;
+        letter-spacing: 0.35px;
+        font-family: "Inter";
+        border: 0.5px solid #ffffff;
+        transform: translateY(150px);
+        transition: 0.3s;
+      }
+    }
+  }
+}

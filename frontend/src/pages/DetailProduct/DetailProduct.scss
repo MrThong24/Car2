@@ -1,0 +1,145 @@
+@import "../../styles/breakpoints";
+.detailContent {
+  width: 100%;
+  display: inline-block;
+  margin: auto;
+  margin-bottom: 50px;
+  .detailBox {
+    max-width: 981px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 38px;
+    background-color: white;
+    padding: 32px 56px 0px 49px;
+    border-radius: 20px;
+    font-family: "Open Sans";
+    @include xl {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    &-header {
+      width: 100%;
+      margin-bottom: 36px;
+      &__btn {
+        display: flex;
+        align-items: center;
+        color: var(--colorButtonPrimary);
+        border: none;
+        background-color: white;
+        cursor: pointer;
+        i {
+          font-size: 20px;
+        }
+        p {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 150%;
+        }
+      }
+    }
+    &-body {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      @include tab2 {
+        flex-direction: column-reverse;
+      }
+      &__detail {
+        width: 38%;
+        margin-right: 32px;
+        @include tab2 {
+          width: 100%;
+          margin-top: 20px;
+        }
+        h2 {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          margin-bottom: 21px;
+          color: #171b2f;
+        }
+        p {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 150%;
+          letter-spacing: 0.35px;
+          margin-bottom: 5px;
+          color: #000000;
+          &:nth-child(3) {
+            margin-bottom: 10px;
+          }
+        }
+      }
+      &__slide {
+        position: relative;
+        width: 62%;
+        height: 316px;
+        cursor: pointer;
+        @include tab2 {
+          width: 100%;
+          height: 250px;
+        }
+        img {
+          width: 100%;
+          height: 316px;
+          object-fit: cover;
+          @include tab2 {
+            width: 100%;
+            height: 250px;
+          }
+        }
+      }
+    }
+    &-footer {
+      margin-top: 45px;
+      &__list {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+      }
+      &__title {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 150%;
+        letter-spacing: 0.35px;
+        margin-bottom: 29px;
+      }
+      &__items {
+        display: flex;
+        @include tab2 {
+          justify-content: center;
+        }
+      }
+    }
+  }
+  .slick-slide img {
+    width: 100%;
+    height: 316px;
+    object-fit: cover;
+    @include tab2 {
+      height: 250px;
+    }
+  }
+  .slick-dots {
+    position: absolute;
+    bottom: 18px !important;
+  }
+  .slick-slider .slick-dots li.slick-active button:before {
+    color: var(--colorButtonPrimary);
+    opacity: 1 !important;
+  }
+  .slick-slider .slick-dots li button::before {
+    font-size: 15px;
+    color: white;
+    opacity: 1 !important;
+  }
+  .slick-dots li {
+    margin: 0px 3px !important;
+  }
+}
